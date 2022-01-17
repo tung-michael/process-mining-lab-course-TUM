@@ -1,1 +1,6 @@
 .vscode
+.alphaMinerVenv
+.idea
+.DS_Store
+.flaskenv
+__pycache__

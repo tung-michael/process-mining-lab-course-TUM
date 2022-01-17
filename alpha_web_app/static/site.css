@@ -1,0 +1,41 @@
+html{
+    background-color: #E7F0F5
+  }
+.message {
+    font-weight: 600;
+    color: blue;
+}
+.navbar {
+    background-color: #009688;
+    font-size: 1em;
+    font-family: 'Merriweather';
+    color: rgb(252,252,252);
+    padding: 8px 5px 8px 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.body-content {
+    text-align: center;
+    padding: 5px;
+    font-family:'Merriweather', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{ 
+    display: block;
+    height: auto; 
+    width: 100%;
+}
