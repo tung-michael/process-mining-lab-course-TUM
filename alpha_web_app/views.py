@@ -31,12 +31,12 @@ def upload_file():
             print(uploaded_file.filename+" saved!")
             
             result_file = 'alpha_' + os.path.splitext(uploaded_file.filename)[0] # set name for result file
-            full_result_name = os.path.join(app.config["RESULTS_FOLDER"], result_file)
+            full_path_result_file = os.path.join(app.config["RESULTS_FOLDER"], result_file)
             ptn = Alpha_alg(parseXes(path)).generate_petri_net() 
-            ptn.render(full_result_name, format = 'pdf')
-            ptn.render(full_result_name, format = 'png')
+            ptn.render(full_path_result_file, format = 'pdf')
+            ptn.render(full_path_result_file, format = 'png')
             
-            return render_template("result-home.html", result_png = full_result_name + '.png', uploaded = uploaded_file.filename ,filename = result_file)
+            return render_template("result-home.html", result_png = full_path_result_file + '.png', uploaded = uploaded_file.filename ,filename = result_file)
     return render_template("home.html")
 
 @app.route('/download-result/<result_file>')
